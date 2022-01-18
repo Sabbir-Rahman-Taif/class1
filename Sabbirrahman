@@ -1,0 +1,103 @@
+<?php
+$title = "Md";
+$f_name = "Sabbir";
+$l_name = "Rahman";
+$nickName = "Taif";
+
+/*
+echo is not a function.
+It is a language construct
+*/
+echo $title; //output Md
+echo $f_name; //output sabbir
+echo $l_name; //output Rahman
+echo $nickName; //output Taif
+
+echo "<br>"; //go to next line
+
+echo $title.$f_name.$l_name.$nickName; 
+/*
+same output as above but only one echo has been used and we are using dot between different variables.
+*/
+?>
+
+<?php
+$title = "Md";
+$f_name = "Sabbir";
+$l_name = "Rahman";
+$nickName = "Taif";
+
+$full_name = $title.$f_name.$l_name.$nickName; 
+/*
+creating a new variable by combining all variables.There is no space.
+*/
+
+echo $full_name; //it will print MdSabbirRahmanTaif without any space.
+
+echo "<br>"; //go to next line.
+
+echo strlen($full_name); //it will count the all characters of the variable.
+
+echo "<br>";
+
+$full_name2 = $title." ".$f_name." ".$l_name." ".$nickName; 
+/*
+creating a new variable by combining all variables. Here, we are putting spaces as string. So, it will count it as a character.
+*/
+
+echo $full_name2; 
+/*
+It will print Md Sabbir Rahman Taif with space.
+*/
+
+echo "<br>"; //go to next line.
+
+echo strlen($full_name2); //it will count the all characters of the variable including space because space is also a character.
+
+echo "<br>";
+
+echo strrev($full_name); //it will reverse the first output
+
+echo "<br>";
+
+echo strrev($full_name2); //it will reverse the 3rd output
+?>
+
+<?php
+$value1 = 25;
+$value2 = 14;
+
+$sum = $value1 + $value2;
+
+echo $sum. "<br>";
+
+//or
+
+echo "$value1" + "$value2". "<br>"; //addition operator (+) is adding both values and printing 39 as same as above.
+
+echo "$value1" - "$value2". "<br>"; //substarcting 14 from 25 and printing the output 11.
+
+echo "$value1" * "$value2". "<br>"; //multiplication oerator (*) is multiplying 25 and 14 and printing 350.
+
+echo "$value1" / "$value2". "<br>"; //divition operator (/) is dividing 25 by 14 and printing the output.
+
+echo "$value1" ** "$value2". "<br>"; //power operator (**) here 25 working as a base and 14 working as a power.
+
+echo "$value1" % "$value2". "<br>"; //modulus operator (%), is dividing 25 by 14 and printing only the remainder as an output.
+
+?>
+
+<?php
+
+$value1 = 25;
+$value2 = 14;
+
+echo $value1."<br>".$value2;
+
+echo $value1 != $value2;
+
+echo $value1 <= $value2;
+
+echo $value1 >= $value2;
+
+?>
